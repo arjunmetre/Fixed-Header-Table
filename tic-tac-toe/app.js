@@ -75,9 +75,10 @@ function buttonsdeaktivieren() {
 function popupzeigen(gewinner) {
       //validate alle Buttons
       buttonsdeaktivieren();
+	  console.log(gewinner +"  gewinner" );
 	  var res="";
 	  console.log(gewinner);
-	  if(gewinner ="X"){
+	  if(gewinner =="X"){
 		  res=gewinner + " "+p1;
 	  }else{
 			res=gewinner + " "+p2;
@@ -107,9 +108,12 @@ function endepruefen() {
     var b7 = document.getElementById("7").value;
     var b8 = document.getElementById("8").value;
     var b9 = document.getElementById("9").value;
-    
+    console.log(b1 +" win chart");
     //obere Reihe
-    if (((b1=="X") || (b1=="O")) && ((b1 == b2) && (b2 == b3))) {
+    if ((b1=="X")  && ((b1 == b2) && (b2 == b3))) {
+        popupzeigen(b1);
+    }
+	 if ( (b1=="O") && ((b1 == b2) && (b2 == b3))) {
         popupzeigen(b1);
     }
     //linke Spalte
