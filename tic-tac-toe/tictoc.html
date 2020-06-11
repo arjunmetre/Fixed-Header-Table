@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Tic-Tac-Toe</title>
+    <meta charset="UTF-8">
+  <script src="app.js"></script>
+   <link rel="stylesheet" href="style.css" />
+  </head>
+   <body style="text-align: center;">
+  <h2 style="text-align: center;">TIC TAC TOE</h2>
+    <div>
+    Player One : <input id="player1_name"> 
+   
+    Player Two : <input id="player2_name">
+    </div>
+    <br>
+    <button id="play" onclick="playerDecision()" >Play Now</button>
+    <button class="reset">Reset</button>
+
+    <hr>
+    <table style="width: 50%; text-align: center; background:gray;"><tr><td>
+    Player X : <span id="player1"></span> 
+   </td><td>
+    Player O : <span id="player2"></span></td>
+    </table>
+	
+  <table width="50%"  style="width: 50%; text-align: center;" id="groundgame"  >
+  
+  <tr>
+  <td><input type="button" id="1" onclick="xoo(1)" value=""/></td>
+  <td><input type="button" id="2" onclick="xoo(2)" value=""/></td>
+  <td><input type="button" id="3" onclick="xoo(3)" value=""/></td>
+  </tr>
+  <tr>
+  <td><input type="button" id="4" onclick="xoo(4)" value=""/></td>
+  <td><input type="button" id="5" onclick="xoo(5)" value=""/></td>
+  <td><input type="button" id="6" onclick="xoo(6)" value=""/></td>
+  </tr>
+  <tr>
+  <td><input type="button" id="7" onclick="xoo(7)" value=""/></td>
+  <td><input type="button" id="8" onclick="xoo(8)" value=""/></td>
+  <td><input type="button" id="9" onclick="xoo(9)" value=""/></td>
+  </tr>
+  </table>
+  
+  <button  onclick="zuruecksetzen()">Reset</button>
+  
+  <section align="center" id="popup">
+  <p id="text">text</p>
+  <button id="popupbutton" onclick="zuruecksetzen()">Ok</button>
+  </section>
+  
+  <section id="overlay"></section>
+  
+  </body>
+</html>
